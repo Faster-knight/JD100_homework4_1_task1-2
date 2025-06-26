@@ -21,6 +21,6 @@ public class Book {
         return author.getSurname().contains(word) || author.getName().contains(word) || title.contains(word);
     }
     public int estimatePrice() {
-        return Math.max(pages * 3, 250);
+        return Math.max((int)Math.floor(pages * 3 * Math.sqrt(author.getRating())), 250);
     }
 }

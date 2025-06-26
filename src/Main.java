@@ -6,7 +6,7 @@ public class Main {
                 "title1",
                 LocalDate.now().toString(),
                 400,
-                new Author("trofim", "postnikov", 0)
+                new Author("trofim", "postnikov", 1)
         );
         System.out.println(book.isBig());
         System.out.println(book.estimatePrice());
